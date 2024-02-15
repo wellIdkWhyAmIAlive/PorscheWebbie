@@ -28,6 +28,9 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+})
 
 var tl = gsap.timeline({
     scrollTrigger: {
